@@ -26,16 +26,6 @@ Begin VB.Form frmSplash
    ScaleWidth      =   7245
    ShowInTaskbar   =   0   'False
    StartUpPosition =   2  'CenterScreen
-   Begin VB.PictureBox Picture2 
-      Height          =   1695
-      Left            =   120
-      Picture         =   "frmSplash.frx":000C
-      ScaleHeight     =   1635
-      ScaleWidth      =   7035
-      TabIndex        =   6
-      Top             =   3000
-      Width           =   7095
-   End
    Begin VB.Frame Frame1 
       BeginProperty Font 
          Name            =   "MS Sans Serif"
@@ -46,16 +36,16 @@ Begin VB.Form frmSplash
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Height          =   2970
+      Height          =   4530
       Left            =   120
       TabIndex        =   0
       Top             =   0
       Width           =   7080
       Begin ComctlLib.ProgressBar ProgressBar1 
          Height          =   375
-         Left            =   480
-         TabIndex        =   4
-         Top             =   2400
+         Left            =   360
+         TabIndex        =   3
+         Top             =   3840
          Width           =   5775
          _ExtentX        =   10186
          _ExtentY        =   661
@@ -70,10 +60,10 @@ Begin VB.Form frmSplash
       Begin VB.PictureBox Picture3 
          Height          =   855
          Left            =   6000
-         Picture         =   "frmSplash.frx":2470E
+         Picture         =   "frmSplash.frx":000C
          ScaleHeight     =   795
          ScaleWidth      =   915
-         TabIndex        =   7
+         TabIndex        =   5
          Top             =   240
          Width           =   975
       End
@@ -82,7 +72,7 @@ Begin VB.Form frmSplash
          Left            =   0
          ScaleHeight     =   15
          ScaleWidth      =   4575
-         TabIndex        =   5
+         TabIndex        =   4
          Top             =   3000
          Width           =   4575
       End
@@ -99,9 +89,9 @@ Begin VB.Form frmSplash
          EndProperty
          ForeColor       =   &H000000FF&
          Height          =   255
-         Left            =   1800
-         TabIndex        =   8
-         Top             =   2040
+         Left            =   1680
+         TabIndex        =   6
+         Top             =   3480
          Width           =   3135
       End
       Begin VB.Label lblProductName 
@@ -118,45 +108,27 @@ Begin VB.Form frmSplash
          EndProperty
          Height          =   480
          Left            =   120
-         TabIndex        =   3
-         Top             =   1440
+         TabIndex        =   2
+         Top             =   2280
          Width           =   6765
-      End
-      Begin VB.Label lblLicenseTo 
-         Alignment       =   1  'Right Justify
-         Caption         =   "LicenseTo NORTHEN RAILWAYS INDIA"
-         BeginProperty Font 
-            Name            =   "Arial"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   255
-         Left            =   120
-         TabIndex        =   1
-         Top             =   240
-         Width           =   3135
       End
       Begin VB.Label lblCompanyProduct 
          AutoSize        =   -1  'True
-         Caption         =   "GOPAL KRISHNA's"
+         Caption         =   "ERROR's 404"
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   15.75
+            Size            =   20.25
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Height          =   360
+         Height          =   480
          Left            =   120
-         TabIndex        =   2
-         Top             =   960
-         Width           =   2835
+         TabIndex        =   1
+         Top             =   1680
+         Width           =   2595
       End
    End
 End
@@ -186,6 +158,5 @@ Case "100"
 Unload Me
 Form1.Show
 End Select
-y = "gopal"
-z = "krishna"
+
 End Sub
