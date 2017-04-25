@@ -16,6 +16,7 @@ Begin VB.Form frmAbout
    ScaleWidth      =   5972.369
    ShowInTaskbar   =   0   'False
    Begin VB.CommandButton cmdOK 
+      BackColor       =   &H8000000A&
       Cancel          =   -1  'True
       Caption         =   "OK"
       Default         =   -1  'True
