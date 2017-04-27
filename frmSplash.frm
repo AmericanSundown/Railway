@@ -156,7 +156,7 @@ Case "90"
 Label1.Caption = "welcome to RRS"
 Case "100"
 Unload Me
-Form1.Show
+Form12.Show
 End Select
 
 End Sub

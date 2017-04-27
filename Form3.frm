@@ -306,13 +306,13 @@ Label12.Caption = (Val(Label5.Caption) * Val(Text1.Text)) + (Val(Label6.Caption)
 End Sub
 
 Private Sub Command2_Click()
-temp3 = Label12.Caption
-Form5.Label11.Caption = Text1.Text
-Form5.Label13.Caption = Text2.Text
-Form5.Label15.Caption = Text3.Text
-Unload Me
-Load Form5
-Form5.Show
+'temp3 = Label12.Caption
+'Form5.Label11.Caption = Text1.Text
+'Form5.Label13.Caption = Text2.Text
+'Form5.Label15.Caption = Text3.Text
+'Unload Me
+'Load Form5
+'Form5.Show
 End Sub
 
 Private Sub Form_Load()

@@ -1,81 +1,65 @@
 VERSION 5.00
 Begin VB.Form Form1 
-   Caption         =   "Login"
-   ClientHeight    =   1830
+   Caption         =   "Railway Reservation System - Login"
+   ClientHeight    =   2550
    ClientLeft      =   6165
    ClientTop       =   4740
-   ClientWidth     =   2910
+   ClientWidth     =   5640
    LinkTopic       =   "Form1"
-   ScaleHeight     =   1830
-   ScaleWidth      =   2910
-   Begin VB.TextBox Text1 
-      Height          =   285
-      Left            =   480
-      TabIndex        =   6
-      Top             =   2520
-      Width           =   1575
-   End
-   Begin VB.TextBox Text2 
-      Height          =   285
-      IMEMode         =   3  'DISABLE
-      Left            =   480
-      PasswordChar    =   "*"
-      TabIndex        =   5
-      Top             =   3000
-      Width           =   1575
-   End
+   ScaleHeight     =   2550
+   ScaleWidth      =   5640
    Begin VB.CommandButton Command2 
       Caption         =   "CANCEL"
       Height          =   375
-      Left            =   1560
+      Left            =   3360
       TabIndex        =   4
-      Top             =   1320
+      Top             =   1800
       Width           =   855
    End
    Begin VB.CommandButton Command1 
       Caption         =   "OK"
       Height          =   375
-      Left            =   480
+      Left            =   1680
       TabIndex        =   3
-      Top             =   1320
+      Top             =   1800
       Width           =   855
    End
    Begin VB.Frame Frame1 
-      Height          =   1095
-      Left            =   120
+      Height          =   2535
+      Left            =   0
       TabIndex        =   0
-      Top             =   120
-      Width           =   2655
+      Top             =   0
+      Width           =   5655
       Begin VB.TextBox Text4 
          Height          =   285
          IMEMode         =   3  'DISABLE
-         Left            =   960
+         Left            =   3000
          PasswordChar    =   "*"
-         TabIndex        =   8
-         Top             =   720
+         TabIndex        =   6
+         Top             =   1080
          Width           =   1575
       End
       Begin VB.TextBox Text3 
          Height          =   285
-         Left            =   960
-         TabIndex        =   7
-         Top             =   240
+         Left            =   3000
+         TabIndex        =   5
+         Top             =   600
          Width           =   1575
       End
       Begin VB.Label Label2 
          Caption         =   "Password"
          Height          =   255
-         Left            =   120
+         Left            =   1200
          TabIndex        =   2
-         Top             =   720
+         Top             =   1080
          Width           =   735
       End
       Begin VB.Label Label1 
          Caption         =   "Username"
          Height          =   255
-         Left            =   120
+         Left            =   1200
          TabIndex        =   1
-         Top             =   240
+         Top             =   720
          Width           =   735
       End
    End
