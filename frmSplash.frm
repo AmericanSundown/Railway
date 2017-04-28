@@ -27,6 +27,7 @@ Begin VB.Form frmSplash
    ShowInTaskbar   =   0   'False
    StartUpPosition =   2  'CenterScreen
    Begin VB.Frame Frame1 
+      BackColor       =   &H00C0C0FF&
       BeginProperty Font 
          Name            =   "MS Sans Serif"
          Size            =   8.25
@@ -78,6 +79,7 @@ Begin VB.Form frmSplash
       End
       Begin VB.Label Label1 
          Alignment       =   2  'Center
+         BackStyle       =   0  'Transparent
          BeginProperty Font 
             Name            =   "MS Sans Serif"
             Size            =   9.75
@@ -96,6 +98,7 @@ Begin VB.Form frmSplash
       End
       Begin VB.Label lblProductName 
          AutoSize        =   -1  'True
+         BackStyle       =   0  'Transparent
          Caption         =   "RAILWAY RESERVATION SYSTEM"
          BeginProperty Font 
             Name            =   "Arial"
@@ -114,6 +117,7 @@ Begin VB.Form frmSplash
       End
       Begin VB.Label lblCompanyProduct 
          AutoSize        =   -1  'True
+         BackStyle       =   0  'Transparent
          Caption         =   "ERROR's 404"
          BeginProperty Font 
             Name            =   "Arial"
