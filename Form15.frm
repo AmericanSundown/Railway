@@ -2,17 +2,19 @@ VERSION 5.00
 Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "MSADODC.OCX"
 Object = "{CDE57A40-8B86-11D0-B3C6-00A0C90AEA82}#1.0#0"; "MSDATGRD.OCX"
 Begin VB.Form Form15 
+   BackColor       =   &H00C0E0FF&
    Caption         =   "Form15"
-   ClientHeight    =   7185
+   ClientHeight    =   9240
    ClientLeft      =   120
    ClientTop       =   450
-   ClientWidth     =   11220
+   ClientWidth     =   15405
    LinkTopic       =   "Form15"
-   ScaleHeight     =   7185
-   ScaleWidth      =   11220
+   ScaleHeight     =   9240
+   ScaleWidth      =   15405
    StartUpPosition =   3  'Windows Default
    Begin VB.Frame Frame4 
-      Caption         =   "Frame4"
+      BackColor       =   &H00C0E0FF&
+      Caption         =   "Fare"
       Height          =   3015
       Left            =   600
       TabIndex        =   6
@@ -22,6 +24,7 @@ Begin VB.Form Form15
          Height          =   735
          Left            =   1560
          Top             =   2160
+         Visible         =   0   'False
          Width           =   3255
          _ExtentX        =   5741
          _ExtentY        =   1296
@@ -66,13 +69,13 @@ Begin VB.Form Form15
       End
       Begin MSDataGridLib.DataGrid DataGrid4 
          Bindings        =   "Form15.frx":0000
-         Height          =   1335
+         Height          =   2535
          Left            =   600
          TabIndex        =   7
          Top             =   360
-         Width           =   11295
-         _ExtentX        =   19923
-         _ExtentY        =   2355
+         Width           =   11415
+         _ExtentX        =   20135
+         _ExtentY        =   4471
          _Version        =   393216
          HeadLines       =   1
          RowHeight       =   15
@@ -133,7 +136,8 @@ Begin VB.Form Form15
       End
    End
    Begin VB.Frame Frame3 
-      Caption         =   "Frame3"
+      BackColor       =   &H00C0E0FF&
+      Caption         =   "Seats"
       Height          =   5295
       Left            =   11400
       TabIndex        =   4
@@ -255,12 +259,13 @@ Begin VB.Form Form15
       End
    End
    Begin VB.Frame Frame2 
-      Caption         =   "Frame2"
+      BackColor       =   &H00C0E0FF&
+      Caption         =   "Timings"
       Height          =   5415
       Left            =   6120
       TabIndex        =   2
       Top             =   240
-      Width           =   4815
+      Width           =   5055
       Begin MSDataGridLib.DataGrid DataGrid2 
          Bindings        =   "Form15.frx":002A
          Height          =   3015
@@ -491,7 +496,8 @@ Begin VB.Form Form15
       EndProperty
    End
    Begin VB.Frame Frame1 
-      Caption         =   "Frame1"
+      BackColor       =   &H00C0E0FF&
+      Caption         =   "Add Train"
       Height          =   5415
       Left            =   120
       TabIndex        =   1

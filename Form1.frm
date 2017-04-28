@@ -1,5 +1,6 @@
 VERSION 5.00
 Begin VB.Form Form1 
+   BackColor       =   &H00C0C0FF&
    Caption         =   "Railway Reservation System - Login"
    ClientHeight    =   2550
    ClientLeft      =   6165
@@ -25,6 +26,7 @@ Begin VB.Form Form1
       Width           =   855
    End
    Begin VB.Frame Frame1 
+      BackColor       =   &H00FFFFC0&
       Height          =   2535
       Left            =   0
       TabIndex        =   0
@@ -47,20 +49,42 @@ Begin VB.Form Form1
          Width           =   1575
       End
       Begin VB.Label Label2 
+         BackStyle       =   0  'Transparent
          Caption         =   "Password"
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   9.75
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00000000&
          Height          =   255
          Left            =   1200
          TabIndex        =   2
          Top             =   1080
-         Width           =   735
+         Width           =   1215
       End
       Begin VB.Label Label1 
+         BackStyle       =   0  'Transparent
          Caption         =   "Username"
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   9.75
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00000000&
          Height          =   255
          Left            =   1200
          TabIndex        =   1
          Top             =   720
-         Width           =   735
+         Width           =   1095
       End
    End
 End
@@ -73,7 +97,7 @@ Attribute VB_Exposed = False
 Private Sub Command1_Click()
 If Text3.Text = "Error" And Text4.Text = "404" Then
 Unload Me
-MDIForm1.Show
+Form14.Show
 Else
 MsgBox ("Invalid Username/Password")
 End If

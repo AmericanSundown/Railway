@@ -1,9 +1,10 @@
 VERSION 5.00
+Object = "{F9043C88-F6F2-101A-A3C9-08002B2F49FB}#1.2#0"; "COMDLG32.OCX"
 Begin VB.Form Form5 
    BackColor       =   &H8000000E&
    BorderStyle     =   1  'Fixed Single
    Caption         =   "Ticket"
-   ClientHeight    =   6045
+   ClientHeight    =   5925
    ClientLeft      =   45
    ClientTop       =   435
    ClientWidth     =   8805
@@ -11,17 +12,25 @@ Begin VB.Form Form5
    MaxButton       =   0   'False
    MDIChild        =   -1  'True
    MinButton       =   0   'False
-   ScaleHeight     =   6045
+   ScaleHeight     =   5925
    ScaleWidth      =   8805
+   Begin MSComDlg.CommonDialog CommonDialog1 
+      Left            =   4200
+      Top             =   2760
+      _ExtentX        =   847
+      _ExtentY        =   847
+      _Version        =   393216
+   End
    Begin VB.TextBox Text4 
       Appearance      =   0  'Flat
       BackColor       =   &H80000009&
       BorderStyle     =   0  'None
       DataField       =   "Class"
       DataSource      =   "Adodc1"
+      ForeColor       =   &H8000000B&
       Height          =   285
       Left            =   6120
-      TabIndex        =   9
+      TabIndex        =   7
       Top             =   1080
       Width           =   2055
    End
@@ -31,9 +40,10 @@ Begin VB.Form Form5
       BorderStyle     =   0  'None
       DataField       =   "Train_No"
       DataSource      =   "Adodc1"
+      ForeColor       =   &H00FFFFFF&
       Height          =   285
       Left            =   1680
-      TabIndex        =   8
+      TabIndex        =   6
       Top             =   600
       Width           =   975
    End
@@ -43,18 +53,20 @@ Begin VB.Form Form5
       BorderStyle     =   0  'None
       DataField       =   "Train_Name"
       DataSource      =   "Adodc1"
+      ForeColor       =   &H8000000B&
       Height          =   285
       Left            =   1560
-      TabIndex        =   7
+      TabIndex        =   5
       Top             =   1080
       Width           =   3615
    End
    Begin VB.TextBox Text3 
       Appearance      =   0  'Flat
       BackColor       =   &H80000009&
+      ForeColor       =   &H8000000B&
       Height          =   285
       Left            =   6240
-      TabIndex        =   6
+      TabIndex        =   4
       Top             =   600
       Width           =   2055
    End
@@ -64,11 +76,12 @@ Begin VB.Form Form5
       BorderStyle     =   0  'None
       DataField       =   "Date_Travel"
       DataSource      =   "Adodc1"
+      ForeColor       =   &H00FFFFFF&
       Height          =   285
-      Left            =   3480
-      TabIndex        =   5
+      Left            =   3840
+      TabIndex        =   3
       Top             =   600
-      Width           =   1695
+      Width           =   1335
    End
    Begin VB.TextBox Text19 
       Appearance      =   0  'Flat
@@ -76,9 +89,10 @@ Begin VB.Form Form5
       BorderStyle     =   0  'None
       DataField       =   "From"
       DataSource      =   "Adodc1"
+      ForeColor       =   &H8000000B&
       Height          =   285
       Left            =   1080
-      TabIndex        =   4
+      TabIndex        =   2
       Top             =   1560
       Width           =   1695
    End
@@ -88,9 +102,10 @@ Begin VB.Form Form5
       BorderStyle     =   0  'None
       DataField       =   "To"
       DataSource      =   "Adodc1"
+      ForeColor       =   &H8000000B&
       Height          =   285
       Left            =   3480
-      TabIndex        =   3
+      TabIndex        =   1
       Top             =   1560
       Width           =   1695
    End
@@ -98,28 +113,29 @@ Begin VB.Form Form5
       Caption         =   "Print"
       Height          =   375
       Left            =   7200
-      TabIndex        =   2
+      TabIndex        =   0
       Top             =   4320
       Width           =   1095
    End
-   Begin VB.PictureBox CommonDialog1 
-      Height          =   480
-      Left            =   7080
-      ScaleHeight     =   420
-      ScaleWidth      =   1140
-      TabIndex        =   1
-      Top             =   5520
-      Width           =   1200
-   End
-   Begin VB.PictureBox DataGrid1 
-      BorderStyle     =   0  'None
-      Height          =   2295
-      Left            =   480
-      ScaleHeight     =   2295
-      ScaleWidth      =   4695
-      TabIndex        =   0
-      Top             =   2400
-      Width           =   4695
+   Begin VB.Label Label25 
+      Alignment       =   2  'Center
+      BackColor       =   &H80000012&
+      Caption         =   "R"
+      BeginProperty Font 
+         Name            =   "Webdings"
+         Size            =   72
+         Charset         =   2
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H8000000C&
+      Height          =   1575
+      Left            =   960
+      TabIndex        =   32
+      Top             =   2640
+      Width           =   1575
    End
    Begin VB.Line Line1 
       X1              =   0
@@ -435,20 +451,22 @@ Begin VB.Form Form5
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
+      ForeColor       =   &H8000000B&
       Height          =   375
       Left            =   360
-      TabIndex        =   33
+      TabIndex        =   31
       Top             =   0
       Width           =   8055
    End
    Begin VB.Label Label1 
       BackColor       =   &H80000009&
       Caption         =   "Train Number"
+      ForeColor       =   &H8000000B&
       Height          =   255
       Left            =   480
-      TabIndex        =   32
+      TabIndex        =   30
       Top             =   600
-      Width           =   975
+      Width           =   1095
    End
    Begin VB.Line Line9 
       X1              =   360
@@ -459,9 +477,10 @@ Begin VB.Form Form5
    Begin VB.Label Label2 
       BackColor       =   &H80000009&
       Caption         =   "Train Name"
+      ForeColor       =   &H8000000B&
       Height          =   255
       Left            =   480
-      TabIndex        =   31
+      TabIndex        =   29
       Top             =   1080
       Width           =   855
    End
@@ -480,45 +499,50 @@ Begin VB.Form Form5
    Begin VB.Label Label7 
       BackColor       =   &H80000009&
       Caption         =   "PNR No"
+      ForeColor       =   &H8000000B&
       Height          =   255
       Left            =   5520
-      TabIndex        =   30
+      TabIndex        =   28
       Top             =   600
       Width           =   615
    End
    Begin VB.Label Label6 
       BackColor       =   &H80000009&
       Caption         =   "Date"
+      ForeColor       =   &H8000000B&
       Height          =   255
       Left            =   2880
-      TabIndex        =   29
+      TabIndex        =   27
       Top             =   600
-      Width           =   375
+      Width           =   615
    End
    Begin VB.Label Label4 
       BackColor       =   &H80000009&
       Caption         =   "To"
+      ForeColor       =   &H8000000B&
       Height          =   255
       Left            =   3000
-      TabIndex        =   28
+      TabIndex        =   26
       Top             =   1560
       Width           =   255
    End
    Begin VB.Label Label3 
       BackColor       =   &H80000009&
       Caption         =   "From"
+      ForeColor       =   &H8000000B&
       Height          =   255
       Left            =   480
-      TabIndex        =   27
+      TabIndex        =   25
       Top             =   1560
       Width           =   375
    End
    Begin VB.Label Label19 
       BackColor       =   &H80000009&
       Caption         =   "class"
+      ForeColor       =   &H8000000B&
       Height          =   255
       Left            =   5520
-      TabIndex        =   26
+      TabIndex        =   24
       Top             =   1080
       Width           =   375
    End
@@ -774,9 +798,10 @@ Begin VB.Form Form5
    Begin VB.Label Label8 
       BackColor       =   &H80000009&
       Caption         =   "Total Amount Incurred"
+      ForeColor       =   &H8000000B&
       Height          =   255
       Left            =   5280
-      TabIndex        =   25
+      TabIndex        =   23
       Top             =   3120
       Width           =   1575
    End
@@ -784,10 +809,10 @@ Begin VB.Form Form5
       Appearance      =   0  'Flat
       BackColor       =   &H80000009&
       BorderStyle     =   1  'Fixed Single
-      ForeColor       =   &H80000008&
+      ForeColor       =   &H8000000B&
       Height          =   255
       Left            =   6960
-      TabIndex        =   24
+      TabIndex        =   22
       Top             =   3120
       Width           =   1335
    End
@@ -864,9 +889,10 @@ Begin VB.Form Form5
    Begin VB.Label Label10 
       BackColor       =   &H80000009&
       Caption         =   "Adult"
+      ForeColor       =   &H8000000B&
       Height          =   255
       Left            =   5520
-      TabIndex        =   23
+      TabIndex        =   21
       Top             =   1560
       Width           =   375
    End
@@ -885,79 +911,88 @@ Begin VB.Form Form5
    Begin VB.Label Label11 
       Alignment       =   2  'Center
       BackColor       =   &H80000009&
+      ForeColor       =   &H8000000B&
       Height          =   255
       Left            =   6000
-      TabIndex        =   22
+      TabIndex        =   20
       Top             =   1560
       Width           =   255
    End
    Begin VB.Label Label12 
       BackColor       =   &H80000009&
       Caption         =   "Child"
+      ForeColor       =   &H8000000B&
       Height          =   255
       Left            =   6480
-      TabIndex        =   21
+      TabIndex        =   19
       Top             =   1560
       Width           =   495
    End
    Begin VB.Label Label13 
       Alignment       =   2  'Center
       BackColor       =   &H80000009&
+      ForeColor       =   &H8000000B&
       Height          =   255
       Left            =   7080
-      TabIndex        =   20
+      TabIndex        =   18
       Top             =   1560
       Width           =   255
    End
    Begin VB.Label Label14 
       BackColor       =   &H80000009&
       Caption         =   "SC"
+      ForeColor       =   &H8000000B&
       Height          =   255
       Left            =   7560
-      TabIndex        =   19
+      TabIndex        =   17
       Top             =   1560
       Width           =   255
    End
    Begin VB.Label Label15 
       Alignment       =   2  'Center
       BackColor       =   &H80000009&
+      ForeColor       =   &H8000000B&
       Height          =   255
       Left            =   7920
-      TabIndex        =   18
+      TabIndex        =   16
       Top             =   1560
       Width           =   255
    End
    Begin VB.Label Label16 
       BackColor       =   &H80000009&
       Caption         =   "Distance"
+      ForeColor       =   &H8000000B&
       Height          =   255
       Left            =   600
-      TabIndex        =   17
+      TabIndex        =   15
       Top             =   4920
       Width           =   735
    End
    Begin VB.Label Label17 
       BackColor       =   &H80000009&
+      ForeColor       =   &H8000000B&
       Height          =   255
       Left            =   1440
-      TabIndex        =   16
+      TabIndex        =   14
       Top             =   4920
       Width           =   615
    End
    Begin VB.Label Label18 
       BackColor       =   &H80000009&
       Caption         =   "Arrival time"
+      ForeColor       =   &H8000000B&
       Height          =   255
       Left            =   2280
-      TabIndex        =   15
+      TabIndex        =   13
       Top             =   4920
       Width           =   855
    End
    Begin VB.Label Label20 
       BackColor       =   &H80000009&
+      ForeColor       =   &H8000000B&
       Height          =   255
       Left            =   3360
-      TabIndex        =   14
+      TabIndex        =   12
       Top             =   4920
       Width           =   735
    End
@@ -970,34 +1005,38 @@ Begin VB.Form Form5
    Begin VB.Label Label21 
       BackColor       =   &H80000009&
       Caption         =   "Departure Time"
+      ForeColor       =   &H8000000B&
       Height          =   255
       Left            =   4320
-      TabIndex        =   13
+      TabIndex        =   11
       Top             =   4920
       Width           =   1095
    End
    Begin VB.Label Label22 
       BackColor       =   &H80000009&
+      ForeColor       =   &H8000000B&
       Height          =   255
       Left            =   6960
-      TabIndex        =   12
+      TabIndex        =   10
       Top             =   4920
       Width           =   1215
    End
    Begin VB.Label Label23 
       BackColor       =   &H80000009&
       Caption         =   "Date"
+      ForeColor       =   &H8000000B&
       Height          =   255
       Left            =   6480
-      TabIndex        =   11
+      TabIndex        =   9
       Top             =   4920
       Width           =   375
    End
    Begin VB.Label Label24 
       BackColor       =   &H80000009&
+      ForeColor       =   &H8000000B&
       Height          =   255
       Left            =   5520
-      TabIndex        =   10
+      TabIndex        =   8
       Top             =   4920
       Width           =   735
    End
@@ -1020,6 +1059,7 @@ Begin VB.Form Form5
       Y2              =   5280
    End
    Begin VB.Shape Shape83 
+      FillColor       =   &H00FFFFFF&
       Height          =   255
       Left            =   1440
       Top             =   4920
@@ -1080,10 +1120,10 @@ Begin VB.Form Form5
       Y2              =   960
    End
    Begin VB.Line Line23 
-      X1              =   5400
-      X2              =   360
-      Y1              =   960
-      Y2              =   960
+      X1              =   7320
+      X2              =   2280
+      Y1              =   1200
+      Y2              =   1200
    End
    Begin VB.Line Line24 
       X1              =   5400
@@ -1142,6 +1182,14 @@ Exit Sub
 End Sub
 
 
+Private Sub DataGrid1_Click()
+
+End Sub
+
+Private Sub CommonDialog1_Click()
+
+End Sub
+
 Private Sub Form_Load()
 Label9.Caption = "Rs." & "" & temp3
 Text3.Text = Temp2
@@ -1163,7 +1211,7 @@ Set Text20.DataSource = rs
 Text20.DataField = "To"
 Set Label22.DataSource = rs
 Label22.DataField = "date_travel"
-Set DataGrid1.DataSource = rs
+
 SQL = "select * from timings where train_no = " & Text1.Text & ""
 Set cn1 = New ADODB.Connection
 cn1.CursorLocation = adUseClient
@@ -1184,4 +1232,8 @@ Label24.DataField = "departure_time"
 End Sub
 
 
+
+Private Sub Text1_Change()
+Text1.Text = Form2.Text1.Text
+End Sub
 
