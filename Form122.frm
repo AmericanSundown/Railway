@@ -86,6 +86,11 @@ Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
+Private Sub Command1_Click()
+Me.Hide
+Form14.Show
+End Sub
+
 Private Sub Command2_Click()
 Unload Me
 Form1.Show
