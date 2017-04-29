@@ -22,10 +22,10 @@ Begin VB.MDIForm MDIForm1
       Height          =   975
       Left            =   0
       ScaleHeight     =   915
-      ScaleWidth      =   20190
+      ScaleWidth      =   14715
       TabIndex        =   0
       Top             =   0
-      Width           =   20250
+      Width           =   14775
       Begin ComctlLib.Toolbar Toolbar1 
          Height          =   870
          Left            =   0
@@ -43,31 +43,26 @@ Begin VB.MDIForm MDIForm1
             NumButtons      =   5
             BeginProperty Button1 {0713F354-850A-101B-AFC0-4210102A8DA7} 
                Caption         =   "Reservation"
-               Key             =   ""
                Object.Tag             =   ""
                ImageIndex      =   1
             EndProperty
             BeginProperty Button2 {0713F354-850A-101B-AFC0-4210102A8DA7} 
                Caption         =   "Cancellation"
-               Key             =   ""
                Object.Tag             =   ""
                ImageIndex      =   2
             EndProperty
             BeginProperty Button3 {0713F354-850A-101B-AFC0-4210102A8DA7} 
                Caption         =   "Search"
-               Key             =   ""
                Object.Tag             =   ""
                ImageIndex      =   3
             EndProperty
             BeginProperty Button4 {0713F354-850A-101B-AFC0-4210102A8DA7} 
                Caption         =   "About"
-               Key             =   ""
                Object.Tag             =   ""
                ImageIndex      =   4
             EndProperty
             BeginProperty Button5 {0713F354-850A-101B-AFC0-4210102A8DA7} 
                Caption         =   "Exit"
-               Key             =   ""
                Object.Tag             =   ""
                ImageIndex      =   5
             EndProperty

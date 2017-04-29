@@ -7,19 +7,58 @@ Begin VB.Form Form15
    ClientHeight    =   9240
    ClientLeft      =   120
    ClientTop       =   450
-   ClientWidth     =   15405
+   ClientWidth     =   17295
    LinkTopic       =   "Form15"
+   Picture         =   "Form15.frx":0000
    ScaleHeight     =   9240
-   ScaleWidth      =   15405
+   ScaleWidth      =   17295
    StartUpPosition =   3  'Windows Default
+   Begin VB.CommandButton Command2 
+      BackColor       =   &H00FFC0C0&
+      Caption         =   "Save and Exit"
+      BeginProperty Font 
+         Name            =   "Monotype Corsiva"
+         Size            =   20.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   -1  'True
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   1215
+      Left            =   0
+      Style           =   1  'Graphical
+      TabIndex        =   9
+      Top             =   8520
+      Width           =   1695
+   End
+   Begin VB.CommandButton Command1 
+      BackColor       =   &H00FFC0C0&
+      Caption         =   "Save and Exit"
+      BeginProperty Font 
+         Name            =   "Monotype Corsiva"
+         Size            =   20.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   -1  'True
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   1215
+      Left            =   15240
+      Style           =   1  'Graphical
+      TabIndex        =   8
+      Top             =   8760
+      Width           =   1695
+   End
    Begin VB.Frame Frame4 
-      BackColor       =   &H00C0E0FF&
+      BackColor       =   &H00C0C0C0&
       Caption         =   "Fare"
       Height          =   3015
-      Left            =   600
+      Left            =   0
       TabIndex        =   6
-      Top             =   5880
-      Width           =   13575
+      Top             =   5280
+      Width           =   8775
       Begin MSAdodcLib.Adodc Adodc3 
          Height          =   735
          Left            =   1560
@@ -67,14 +106,14 @@ Begin VB.Form Form15
          EndProperty
          _Version        =   393216
       End
-      Begin MSDataGridLib.DataGrid DataGrid4 
-         Bindings        =   "Form15.frx":0000
+      Begin MSDataGridLib.DataGrid s 
+         Bindings        =   "Form15.frx":10D2FA
          Height          =   2535
-         Left            =   600
+         Left            =   120
          TabIndex        =   7
          Top             =   360
-         Width           =   11415
-         _ExtentX        =   20135
+         Width           =   8175
+         _ExtentX        =   14420
          _ExtentY        =   4471
          _Version        =   393216
          HeadLines       =   1
@@ -136,17 +175,17 @@ Begin VB.Form Form15
       End
    End
    Begin VB.Frame Frame3 
-      BackColor       =   &H00C0E0FF&
+      BackColor       =   &H00C0C0C0&
       Caption         =   "Seats"
-      Height          =   5295
-      Left            =   11400
+      Height          =   3495
+      Left            =   10320
       TabIndex        =   4
-      Top             =   360
-      Width           =   4215
+      Top             =   240
+      Width           =   6615
       Begin MSAdodcLib.Adodc Adodc2 
          Height          =   330
-         Left            =   840
-         Top             =   4320
+         Left            =   960
+         Top             =   2640
          Visible         =   0   'False
          Width           =   1200
          _ExtentX        =   2117
@@ -191,13 +230,13 @@ Begin VB.Form Form15
          _Version        =   393216
       End
       Begin MSDataGridLib.DataGrid DataGrid3 
-         Bindings        =   "Form15.frx":0015
+         Bindings        =   "Form15.frx":10D30F
          Height          =   2895
          Left            =   240
          TabIndex        =   5
          Top             =   360
-         Width           =   3855
-         _ExtentX        =   6800
+         Width           =   6135
+         _ExtentX        =   10821
          _ExtentY        =   5106
          _Version        =   393216
          HeadLines       =   1
@@ -259,22 +298,69 @@ Begin VB.Form Form15
       End
    End
    Begin VB.Frame Frame2 
-      BackColor       =   &H00C0E0FF&
+      BackColor       =   &H00C0C0C0&
       Caption         =   "Timings"
-      Height          =   5415
-      Left            =   6120
+      Height          =   3015
+      Left            =   10440
       TabIndex        =   2
-      Top             =   240
-      Width           =   5055
+      Top             =   5160
+      Width           =   6495
+      Begin MSAdodcLib.Adodc Adodc1 
+         Height          =   735
+         Left            =   360
+         Top             =   1080
+         Visible         =   0   'False
+         Width           =   4095
+         _ExtentX        =   7223
+         _ExtentY        =   1296
+         ConnectMode     =   0
+         CursorLocation  =   3
+         IsolationLevel  =   -1
+         ConnectionTimeout=   15
+         CommandTimeout  =   30
+         CursorType      =   3
+         LockType        =   3
+         CommandType     =   2
+         CursorOptions   =   0
+         CacheSize       =   50
+         MaxRecords      =   0
+         BOFAction       =   0
+         EOFAction       =   0
+         ConnectStringType=   1
+         Appearance      =   1
+         BackColor       =   -2147483643
+         ForeColor       =   -2147483640
+         Orientation     =   0
+         Enabled         =   -1
+         Connect         =   "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=E:\railway\Railway Reservation.mdb;Persist Security Info=False"
+         OLEDBString     =   "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=E:\railway\Railway Reservation.mdb;Persist Security Info=False"
+         OLEDBFile       =   ""
+         DataSourceName  =   ""
+         OtherAttributes =   ""
+         UserName        =   ""
+         Password        =   ""
+         RecordSource    =   "timings"
+         Caption         =   "Adodc1"
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         _Version        =   393216
+      End
       Begin MSDataGridLib.DataGrid DataGrid2 
-         Bindings        =   "Form15.frx":002A
-         Height          =   3015
+         Bindings        =   "Form15.frx":10D324
+         Height          =   2415
          Left            =   120
          TabIndex        =   3
-         Top             =   240
-         Width           =   4695
-         _ExtentX        =   8281
-         _ExtentY        =   5318
+         Top             =   480
+         Width           =   5895
+         _ExtentX        =   10398
+         _ExtentY        =   4260
          _Version        =   393216
          HeadLines       =   1
          RowHeight       =   15
@@ -333,58 +419,11 @@ Begin VB.Form Form15
             EndProperty
          EndProperty
       End
-      Begin MSAdodcLib.Adodc Adodc1 
-         Height          =   735
-         Left            =   600
-         Top             =   3960
-         Visible         =   0   'False
-         Width           =   4095
-         _ExtentX        =   7223
-         _ExtentY        =   1296
-         ConnectMode     =   0
-         CursorLocation  =   3
-         IsolationLevel  =   -1
-         ConnectionTimeout=   15
-         CommandTimeout  =   30
-         CursorType      =   3
-         LockType        =   3
-         CommandType     =   2
-         CursorOptions   =   0
-         CacheSize       =   50
-         MaxRecords      =   0
-         BOFAction       =   0
-         EOFAction       =   0
-         ConnectStringType=   1
-         Appearance      =   1
-         BackColor       =   -2147483643
-         ForeColor       =   -2147483640
-         Orientation     =   0
-         Enabled         =   -1
-         Connect         =   "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=E:\railway\Railway Reservation.mdb;Persist Security Info=False"
-         OLEDBString     =   "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=E:\railway\Railway Reservation.mdb;Persist Security Info=False"
-         OLEDBFile       =   ""
-         DataSourceName  =   ""
-         OtherAttributes =   ""
-         UserName        =   ""
-         Password        =   ""
-         RecordSource    =   "timings"
-         Caption         =   "Adodc1"
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "MS Sans Serif"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         _Version        =   393216
-      End
    End
    Begin MSAdodcLib.Adodc adogrid 
       Height          =   855
-      Left            =   1200
-      Top             =   4080
+      Left            =   1320
+      Top             =   1080
       Visible         =   0   'False
       Width           =   2775
       _ExtentX        =   4895
@@ -429,14 +468,14 @@ Begin VB.Form Form15
       _Version        =   393216
    End
    Begin MSDataGridLib.DataGrid DataGrid1 
-      Bindings        =   "Form15.frx":003F
-      Height          =   3255
+      Bindings        =   "Form15.frx":10D339
+      Height          =   2895
       Left            =   240
       TabIndex        =   0
-      Top             =   360
-      Width           =   5295
-      _ExtentX        =   9340
-      _ExtentY        =   5741
+      Top             =   480
+      Width           =   8295
+      _ExtentX        =   14631
+      _ExtentY        =   5106
       _Version        =   393216
       HeadLines       =   1
       RowHeight       =   15
@@ -496,13 +535,13 @@ Begin VB.Form Form15
       EndProperty
    End
    Begin VB.Frame Frame1 
-      BackColor       =   &H00C0E0FF&
+      BackColor       =   &H00C0C0C0&
       Caption         =   "Add Train"
-      Height          =   5415
+      Height          =   3615
       Left            =   120
       TabIndex        =   1
       Top             =   120
-      Width           =   5775
+      Width           =   8775
    End
 End
 Attribute VB_Name = "Form15"
@@ -510,3 +549,15 @@ Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
+Private Sub Command1_Click()
+End
+
+End Sub
+
+Private Sub Form_Load()
+Me.Width = Screen.Width
+Me.Height = Screen.Height
+Me.Top = 0
+Me.Left = 0
+
+End Sub

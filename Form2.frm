@@ -560,7 +560,7 @@ Begin VB.Form Form2
       Height          =   1575
       Left            =   0
       TabIndex        =   33
-      Top             =   480
+      Top             =   600
       Width           =   7455
       Begin VB.TextBox Text20 
          DataField       =   "To"
@@ -616,7 +616,7 @@ Begin VB.Form Form2
          _ExtentY        =   661
          _Version        =   393216
          CheckBox        =   -1  'True
-         Format          =   23003137
+         Format          =   102301697
          CurrentDate     =   40151
       End
       Begin VB.Label Label19 

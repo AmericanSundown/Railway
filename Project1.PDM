@@ -51,6 +51,9 @@ C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Y
 C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
 C:\Windows\System32\VB6STKIT.DLL=Yes
 C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\Windows\SysWOW64\MSCHRT20.OCX=Yes
+C:\Windows\SysWOW64\MSDATREP.OCX=Yes
+C:\Windows\SysWOW64\MSDATLST.OCX=Yes
 
 [Package|Standard Script|Configure Registry Files]
 Applicable=No
@@ -82,16 +85,29 @@ C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$
 C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
 C:\Windows\System32\VB6STKIT.DLL=$(WinSysPathSysFile)
 C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\Windows\SysWOW64\MSCHRT20.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\MSDATREP.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\MSDATLST.OCX=$(WinSysPath)
 
 [Package|Standard Script|Configure Shared Files]
 Applicable=Yes
-E:\Railway\RRS.exe=No
-C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=No
+E:\Railway\RRS.exe=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=Yes
 
 [Package|Standard Script|Distribution]
 Type=single
 Size=
 Title=Railway Reservation System
+
+[Package|Standard Script|Package]
+PackageFolder=E:\Railway\Package
+ProjectFolder=E:\Railway
+ServerSideCab=
+File1=E:\Railway\Package\setup.exe
+File2=E:\Railway\Package\Setup.Lst
+File3=E:\Railway\Package\RRS.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
 
 [Package|Standard Script|IconGroups]
 Group0=Railway Reservation System
@@ -103,13 +119,3 @@ Icon1=RRS.exe
 Title1=Railway Reservation System
 StartIn1=$(AppPath)
 Key1=Icon1
-
-[Package|Standard Script|Package]
-PackageFolder=E:\Railway\Package
-ProjectFolder=E:\Railway
-ServerSideCab=
-File1=E:\Railway\Package\setup.exe
-File2=E:\Railway\Package\Setup.Lst
-File3=E:\Railway\Package\RRS.CAB
-Handler1=PDWizard.FolderDplySubWiz
-Handler2=PDWizard.WebPostDplySubWiz
